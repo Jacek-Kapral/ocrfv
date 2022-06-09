@@ -11,7 +11,7 @@ def skalaSzarosci(obraz):
 
 #usuniecie szumu z obrazu
 def usuwanieSzumu(obraz):
-    return cv2.medianBlur(obraz, 5)
+    return cv2.medianBlur(obraz, 1)
 
 def progCzerni(obraz):
     return cv2.threshold(obraz, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
